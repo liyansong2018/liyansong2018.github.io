@@ -11,6 +11,60 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style media="screen" type="text/css">
+			div.bio {
+				clear: both;
+				margin-top: 0.4em;
+				margin-bottom: 0.7em;
+				/* border: 0px solid #ddd; */
+				/* background: #fff; */
+				padding: 0.55em .8em 0.6em .8em;
+				border-top-right-radius:10px; 
+				border-top-left-radius:10px; 
+				border-bottom-left-radius:10px; 
+				border-bottom-right-radius:10px;
+				line-height: 150%;
+			}
+			div.paper {
+				clear: both;
+				margin-top: 0.4em;
+				margin-bottom: 0.7em;
+				border: 2px solid #ddd;
+				/* background: #fff; */
+				padding: 0.55em .8em 0.6em .8em;
+				border-top-right-radius:10px; 
+				border-top-left-radius:10px; 
+				border-bottom-left-radius:10px; 
+				border-bottom-right-radius:10px;
+				line-height: 170%;
+			}
+
+			div.section {
+				clear: both;
+				margin-bottom: 1.2em;
+				/* background: #F4F6F6; */
+			}
+			img.paper {
+				margin-right: 0.8em;
+				float: left;
+				width: 30%;
+			}
+			div.spanner {
+				clear: both;
+			}
+
+			ul {
+				display: block;
+				list-style-type: disc;
+				margin-block-start: 0.5em;
+				margin-block-end: 0.5em;
+				margin-inline-start: 0px;
+				margin-inline-end: 0px;
+				padding-inline-start: 40px;
+			}			
+		</style>
+		<script type="text/javascript" src="./assets/js/hidebib.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -33,7 +87,7 @@
 								<li><a href="#intro">个人简介</a></li>
 								<li><a href="#work">工作经历</a></li>
 								<li><a href="#about">浮光掠影</a></li>
-								<li><a href="#contact">其他站点</a></li>
+								<li><a href="#contact">个人博客</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -44,36 +98,143 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="">技术栈</h2>
+								<h2 class="">个人简介</h2>
+								<font size="3.5px">
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								
-								<p>
-									一个出生于物质匮乏，精神丰富的年代，热爱网络安全技术的小白。
-								</p>
 
+								
+								<h3>关于我</h3>
 								<p>
-									学校：西安电子科技大学 <br />
-									专业：信息安全 <br />
-									工作：网络安全与用户隐私保护<br />
-									方向：智能家居、移动终端、智能网联汽车安全<br />
-									擅长：渗透测试与合规验证<br />
-									&emsp;&emsp;&emsp;二进制、逆向、漏洞挖掘、Fuzzing <br />
+									一个出生于物质匮乏，精神丰富的年代，热爱网络安全技术的小白。喜欢天马行空的想象，热爱漫无边际的寻找。
+									2016年本科毕业，2019年研究生毕业。对信息安全的启蒙源于研究生时代，正式步入网络安全世界的大门其实是从工作开始。
+									擅长<font color="#89c65e">合规验证与渗透测试</font>，曾发现Google、中兴、TP-Link、D-Link等多个产品以及一些开源项目的漏洞，专注于<font color="#89c65e">IoT、移动终端等领域的逆向、协议Fuzzing、黑白盒测试</font>。
 								</p>
 								
-								<p>
-									喜欢天马行空的想象，热爱漫无边际的寻找。
-								</p>
+								
+								<div class="section"></div>
+								<h3 id="confpapers">论文</h3>
+
+								<!-- Comm 2019 -->
+								<div class="paper" id="Comm2019"><img class="paper" src="images/paper1.png"/>
+
+									<a><b>TSP Security in Intelligent and Connected Vehicles: Challenges and Solutions</b></a><br />
+									Yansong Li, Qian Luo, Jiajia Liu, Hongzhi Guo, Nei Kato <br />
+									<i>IEEE Wireless Communications. 26(3): 125-131 (2019)</i><br />
+									[ <a href='https://ieeexplore.ieee.org/document/8648454'>PDF</a> ]
+									[ <a href=''>Part of the Code</a> ] 
+									<!-- <alert>An effective self-supervised video representation learning framework.</alert> -->
+									[ <a shape="rect" href="javascript:togglebib(&#39;Comm2019&#39;)" class="togglebib">Bibtex</a> ]<br />
+									<pre xml:space="preserve" style="display: none;">
+<font size="3px">
+<br />
+@article{DBLP:journals/wc/LiLLGK19,
+	author    = {Yansong Li and
+					Qian Luo and
+					Jiajia Liu and
+					Hongzhi Guo and
+					Nei Kato},
+	title     = {{TSP} Security in Intelligent and Connected Vehicles: Challenges and
+					Solutions},
+	journal   = {{IEEE} Wirel. Commun.},
+	volume    = {26},
+	number    = {3},
+	pages     = {125--131},
+	year      = {2019},
+	url       = {https://doi.org/10.1109/MWC.2019.1800289},
+	doi       = {10.1109/MWC.2019.1800289},
+	timestamp = {Tue, 24 Mar 2020 08:54:58 +0100},
+	biburl    = {https://dblp.org/rec/journals/wc/LiLLGK19.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+</font>
+									</pre>									
+								<div class="spanner"></div>
+								</div>
+									
+								<div class="section"></div>
+								<!-- CSS2017 -->
+								<div class="paper" id="ICCV19"><img class="paper" src="images/paper2.png"/>
+									<b><a>My Smartphone Knows Your Health Data: Exploiting Android-Based Deception Attacks Against Smartbands</a></b><br />
+									Jun Xie, Sha Wu, Yansong Li, Jun Guo, Wen Sun, Jiajia Liu <br />
+									<i>Cyberspace Safety and Security (CSS), 2017 </i><br />
+									[ <a href='https://link.springer.com/chapter/10.1007/978-3-319-69471-9_22'>PDF</a> ]
+									[ <a shape="rect" href="javascript:togglebib(&#39;ICCV19&#39;)" class="togglebib">Bibtex</a> ]<br />
+									<pre xml:space="preserve" style="display: none;">
+<font size="3px">
+<br />
+@inproceedings{DBLP:conf/css/XieWLGSL17,
+	author    = {Jun Xie and
+					Sha Wu and
+					Yansong Li and
+					Jun Guo and
+					Wen Sun and
+					Jiajia Liu},
+	editor    = {Sheng Wen and
+					Wei Wu and
+					Aniello Castiglione},
+	title     = {My Smartphone Knows Your Health Data: Exploiting Android-Based Deception
+					Attacks Against Smartbands},
+	booktitle = {Cyberspace Safety and Security - 9th International Symposium, {CSS}
+					2017, Xi'an, China, October 23-25, 2017, Proceedings},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {10581},
+	pages     = {291--306},
+	publisher = {Springer},
+	year      = {2017},
+	url       = {https://doi.org/10.1007/978-3-319-69471-9\_22},
+	doi       = {10.1007/978-3-319-69471-9\_22},
+	timestamp = {Tue, 14 May 2019 10:00:53 +0200},
+	biburl    = {https://dblp.org/rec/conf/css/XieWLGSL17.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+</font>
+									</pre>
+
+								<div class="spanner"></div>
+								</div>
+
+								<!-- Industrial Experience -->
+								<br />
+								<div style="clear: both;">
+								<div class="section"><h3>相关经历</h3>
+								<div class="paper">
+									<ul>
+									<li> <i>2017.03 - 2017.05</i> &emsp; <font color="#89c65e">无线网络协作安全研究项目</font>，通过对数据包的嗅探、解密和对App的逆向，开发出一款App通过蓝牙在未经授权的情况下获取多款手环的隐私信息，并实现部分信息的篡改</li>
+									<li> <i>2017.09 - 2017.10</i> &emsp; <font color="#89c65e">西电-360联合实验室车联网安全研究项目</font>，与奇虎360合作，联合破解网络数据，搭建西电 & 360 智能网联车安全攻防演练平台</li>
+									<li> <i>2018.04 - 2018.05</i> &emsp; <font color="#89c65e">信息投送重点研发项目</font>，通过漏洞挖掘与远程服务器渗透，独立发现某车联网移动终端存在SSL弱校验、服务器逻辑验证等加密漏洞，并编写脚本(Python)对相应的漏洞进行测试，成功获取服务器数据库信息</li>
+									<li> <i>2018.08 - 2018.09</i> &emsp; <font color="#89c65e">云计算网络技术研究项目</font>，负责Docker环境下的前后端分离项目部署与运维，部署多节点MySQL和Redis数据库集群，使用Tomcat、Nginx部前后端后，实现大型项目的前后端分离与服务器的负载均衡高可用</li>
+									</ul>
+								</div>
+								</div>
+								</div>
+
+								<!-- Awards -->
+								<br />
+								<div style="clear: both;">
+								<div class="section"><h3>过去</h3>
+								<div class="paper">
+									<ul>
+									<li> <i>2012.09 - 2015.06</i>  &emsp;本科期间，连续三年获得校“三好学生”和“优秀共青团员”，连续三年获得二等和一等奖学金</li>
+									<li> <i>2016.09 - 2018.09</i>  &emsp;研究生期间，连续三年获得二等奖学金一次、三等奖学金两次，网络安全单项奖学金一次 </li>
+									<li> 获得2014年全国大学生数学建模竞赛安徽省一等奖、网络挑战赛全国二等奖 </li>
+									</ul>
+								</div>
+								</div>
+								</div>
+								
+								</font>
 							</article>
 
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">工作经历</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-
+								<font size="3.5px">
 								<p>
 									2018年：上汽通用信息系统部实习<br />
 									2019年-至今：XX公司
 								</p>
+								</font>
 
 							</article>
 
@@ -187,7 +348,7 @@
 
 						<!-- Contact -->
 							<article id="contact">
-								<h2 class="major">Contact</h2>
+								<h2 class="major">联系我</h2>
 								<!--
 								<form method="post" action="#">
 									<div class="fields">
