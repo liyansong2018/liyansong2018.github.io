@@ -29,8 +29,4 @@ Credits:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 
-这是一个正在测试中的个人主页：
-并非一个正式项目，而是融合多个 H5 页面的个人简介
-main.css 649 650 1332 1334 623
-906 标签显示及文本对齐
-主页新增多个JS、CSS等
+Personal home page from Li Yansong
